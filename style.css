@@ -4,7 +4,6 @@ body {
   font-family: sans-serif;
   color: hsl(0, 0%, 80%);
   background-color: hsl(0, 0%, 20%);
-
 }
 
 .container {
@@ -22,11 +21,11 @@ h1 {
 .tableheader {
   width: 100%;
   display: flex;
-  border-bottom: 1px solid lightgray;
   padding-bottom: 12px;
   font-weight: 600;
   font-size: 12px;
 }
+
 .tableheader .nameClass{
   padding-left:18px;
   margin: 0%;
@@ -46,6 +45,10 @@ margin: 0%;
   padding-left:28px;
   margin: 0%;
   padding-right: 26px;
+}
+
+.separator1{
+  width: 100%; 
 }
 
 .products .row {
@@ -179,7 +182,6 @@ padding-left: 20px;
   .tableheader {
     width: 100%;
     display: flex;
-    border-bottom: 1px solid lightgray;
     padding-bottom: 12px;
     font-weight: 600;
     font-size: 22px;
@@ -317,16 +319,15 @@ padding-left: 20px;
   .tableheader {
     width: 100%;
     display: flex;
-    border-bottom: 1px solid lightgray;
     padding-bottom: 12px;
     font-weight: 600;
     font-size: 22px;
-    gap: 11%;
+    gap: 15%;
   }
  
   .products .row {
     display: flex;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 30px;
     align-items: baseline;
     position: relative;
@@ -338,12 +339,13 @@ padding-left: 20px;
     height: 150px;
     position: absolute;
     left: -15px;
+    top: 10px;
   }
   
   .products .title {
     display: flex;
     flex-direction: column;
-    padding-left: 80px;
+    padding-left: 180px;
     width: 148px;
   }
   
@@ -379,8 +381,8 @@ padding-left: 20px;
   margin: 0;
   padding: 0;
   width: 110px;
-  padding-left: 142px;
-  padding-right: 102px;
+  padding-left: 250px;
+  padding-right: 200px;
   }
   
   .products .row .inputValue {
@@ -395,7 +397,7 @@ padding-left: 20px;
     margin: 0;
     padding: 0;
     width: 40px;
-    padding-left: 162px;
+    padding-left: 270px;
   }
   
   .totals {
@@ -433,5 +435,127 @@ padding-left: 20px;
     border-radius: 9px;
     cursor: pointer;
     transition: all 0.3s ease;
+    }
 
+}
+
+@media (min-width:1920px) {
+  
+  h1 {
+    font-size: 54px;
+    padding-bottom: 30px;
+  }
+  
+  .tableheader {
+    gap: 17%;
+  }
+
+  .products .row {
+    display: flex;
+    padding-top: 80px;
+    padding-left: 92px;
+  }
+  
+  .products img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: -25px;
+    top: -25px;
+  }
+  
+  .products .title {
+    display: flex;
+    flex-direction: column;
+    padding-left: 280px;
+    width: 148px;
+  }
+  
+  .products .row .title span:first-of-type {
+    font-weight: bold;
+    font-size: 44px;
+    width: 380px;
+    text-align: left;
+    padding-bottom: 8px;
+  }
+  
+  .products .row .title span:nth-of-type(2) {
+    font-weight: 200;
+    font-size: 28px;
+    text-align: left;
+    padding-bottom: 8px;
+  }
+  
+  .products .row .title button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    text-align: left;
+    color: gray;
+    cursor: pointer;
+    font-size: 26px;
+  }
+  
+  .products .row .precioUnitario{
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  width: 110px;
+  padding-left: 368px;
+  padding-right: 316px;
+  }
+  
+  .products .row .inputValue {
+    margin: 0;
+    padding: 5px 26px;
+    font-size: 28px;
+    text-align: right;
+  }
+  .products .row .precioTotal{
+  
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    padding-left: 352px;
+  }
+  
+  .totals {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 44px;
+    padding-bottom: 44px;
+    padding-right: 50px;
+    font-style: italic;
+    font-size: 20px;
+  }
+
+  .subtotal h2 {
+    margin: 0;
+    font-size: 40px;
+    font-style: normal;
+  }
+
+  .subtotal {
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  .totals button {
+    background: teal;
+    color: white;
+    border: 4px solid transparent;
+    padding: 12px 20px;
+    font-size: 36px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
 }
