@@ -14,8 +14,9 @@ body {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
+  padding: 20px 0px;
 }
 
 .tableheader {
@@ -23,28 +24,25 @@ h1 {
   display: flex;
   padding-bottom: 12px;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 10px;
+  justify-content: space-around ;
 }
 
 .tableheader .nameClass{
-  padding-left:18px;
   margin: 0%;
+  width: 30%;
 }
 
 .tableheader .detailsClass{
-  padding-left:48px;
   margin: 0%;
 }
 
 .tableheader .priceClass{
-padding-left:56px;
-margin: 0%;
+  margin: 0%;
 
 }
 .tableheader .quantityClass{
-  padding-left:28px;
   margin: 0%;
-  padding-right: 26px;
 }
 
 .separator1{
@@ -54,38 +52,44 @@ margin: 0%;
 .products .row {
   display: flex;
   padding-top: 20px;
-  align-items: baseline;
-  position: relative;
-  padding-left: 92px;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .products .row p {
   margin: 0;
 }
 
+.products .productDiv{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
 .products img {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  left: 0px;
-  top: 10px;
+  width: 100px;
+  padding: 0;
+  margin: 0;
 }
 
 .products .title {
   display: flex;
   flex-direction: column;
+  width: 80%;
+  text-align: left;
 }
 
 .products .row .title span:first-of-type {
   font-weight: bold;
-  font-size: 10px;
-  width: 80px;
+  font-size: 12px;
   text-align: left;
+  width: 120%;
+  padding-top: 10px;
+  line-height: 15px;
 }
 
 .products .row .title span:nth-of-type(2) {
   font-weight: 200;
-  font-size: 9px;
+  font-size: 10px;
   text-align: left;
 }
 
@@ -98,32 +102,29 @@ margin: 0%;
   text-align: left;
   color: gray;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 9px;
 }
 
 .products .row .precioUnitario{
-font-size: 12px;
+font-size: 10px;
 margin: 0;
 padding: 0;
-width: 40px;
-padding-right: 22px;
-padding-left: 26px;
 }
 
 .products .row .inputValue {
-  width: 20px;
+  width: 25px;
   margin: 0;
-  padding: 0px 5px;
-  font-size: 12px;
+  font-size: 10px;
   text-align: left;
 }
 .products .row .precioTotal{
-  font-size: 12px;
+  font-size: 10px;
   margin: 0;
   padding: 0;
-  width: 40px;
-  padding-left: 36px;
+  width: 10%;
+
 }
+
 
 .totals {
   display: flex;
@@ -149,6 +150,7 @@ padding-left: 26px;
   font-weight: bold;
   font-size: 20px;
   font-style: normal;
+
 }
 
 .totals button {
@@ -167,16 +169,16 @@ padding-left: 26px;
   border: 4px solid teal;
 }
 
-@media (min-width:768px) {
+@media (min-width:500px) {
 
   .container {
-    width: 100%;
+    width:90%;
     margin: 0;
     padding: 5%;
   }
   
   h1 {
-    font-size: 44px;
+    font-size: 24px;
     padding-bottom: 30px;
   }
   
@@ -185,85 +187,102 @@ padding-left: 26px;
     display: flex;
     padding-bottom: 12px;
     font-weight: 600;
-    font-size: 22px;
-    gap: 6.5%;
+    font-size: 16px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .tableheader .nameClass{
+    padding:0px;
+    margin: 0%;
+  }
+  
+  .tableheader .detailsClass{
+    padding:0px;
+    margin: 0%;
+  }
+  
+  .tableheader .priceClass{
+    padding:0px;
+  margin: 0%;
+  
+  }
+  .tableheader .quantityClass{
+    padding:0px;
+    margin: 0%;
+  }
+
+  .tableheader .subtotalClass{
+    padding:0px;
+    margin: 0%;
+  }
+  
+  .separator1{
+    width: 100%; 
   }
  
   .products .row {
     display: flex;
     padding-top: 30px;
-    padding-bottom: 30px;
     align-items: baseline;
-    position: relative;
-    padding-left: 102px;
+    justify-content: space-around;
+    padding-left: 0;
+
   }
   
   .products img {
-    width: 120px;
-    height: 120px;
-    position: absolute;
-    left: -15px;
+    width: 80px;
+    height: 80px;
+    background-color: #00aeae;
+    display: flex;
+
   }
   
   .products .title {
     display: flex;
     flex-direction: column;
-    padding-left: 60px;
-    width: 148px;
+    padding-left:0px;
+    padding-right: 0px;    margin: 0px;
   }
   
   .products .row .title span:first-of-type {
     font-weight: bold;
-    font-size: 24px;
-    width: 160px;
+    font-size: 16px;
     text-align: left;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
   }
   
   .products .row .title span:nth-of-type(2) {
     font-weight: 200;
-    font-size: 18px;
+    font-size: 12px;
     text-align: left;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
   }
   
   .products .row .title button {
-    background: none;
-    border: none;
-    margin: 0;
-    padding: 0;
     padding-top: 10px;
-    text-align: left;
-    color: gray;
-    cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
   }
   
   .products .row .precioUnitario{
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
-  width: 110px;
-  padding-right: 36px;
-  padding-left: 40px;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+    padding-left:0px;
+    padding-right: 0px;
   }
   
   .products .row .inputValue {
-    width: 30px;
     margin: 0;
-    padding: 5px 10px;
-    font-size: 18px;
+    font-size: 14px;
     text-align: left;
-    width: 45px;
+    width: 25px;
   }
   .products .row .precioTotal{
   
-    padding-left: 12px;
-    font-size: 18px;
+    font-size: 14px;
     margin: 0;
     padding: 0;
-    width: 40px;
-    padding-left: 100px;
   }
   
   .totals {
@@ -272,14 +291,13 @@ padding-left: 26px;
     align-items: flex-end;
     margin-top: 44px;
     padding-bottom: 44px;
-    padding-right: 50px;
     font-style: italic;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .subtotal h2 {
     margin: 0;
-    font-size: 40px;
+    font-size: 20px;
     font-style: normal;
   }
 
@@ -287,7 +305,7 @@ padding-left: 26px;
     display: flex;
     gap: 8px;
     align-items: baseline;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
     font-style: normal;
   }
@@ -297,7 +315,7 @@ padding-left: 26px;
     color: white;
     border: 4px solid transparent;
     padding: 12px 20px;
-    font-size: 36px;
+    font-size: 16px;
     border-radius: 9px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -305,7 +323,7 @@ padding-left: 26px;
 
 }
 
-@media (min-width:1024px) {
+@media (min-width:780px) {
 
   .container {
     width: 90%;
@@ -314,17 +332,17 @@ padding-left: 26px;
   }
   
   h1 {
-    font-size: 44px;
+    font-size: 24px;
     padding-bottom: 30px;
   }
   
   .tableheader {
-    width: 100%;
     display: flex;
     padding-bottom: 12px;
     font-weight: 600;
-    font-size: 22px;
-    gap: 10%;
+    font-size: 16px;
+    align-items: space-around;
+    justify-content: space-around;
   }
  
   .products .row {
@@ -332,8 +350,8 @@ padding-left: 26px;
     padding-top: 50px;
     padding-bottom: 30px;
     align-items: baseline;
+    justify-content: space-around;
     position: relative;
-    padding-left: 102px;
   }
   
   .products img {
@@ -442,7 +460,7 @@ padding-left: 26px;
 
 }
 
-@media (min-width:1920px) {
+@media (min-width:1440px) {
 
   .container {
     width: 90%;
@@ -455,13 +473,14 @@ padding-left: 26px;
   }
   
   .tableheader {
-    gap: 17%;
+    justify-content: space-around;
   }
 
   .products .row {
     display: flex;
     padding-top: 80px;
     padding-left: 92px;
+    
   }
   
   .products img {

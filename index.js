@@ -49,26 +49,31 @@ const tagSelection = document.querySelector('.products')
 for(var i=0; i<data.shirts.length; i++){ //<---- Looping by index value
 
 const producto = tagSelection.appendChild(document.createElement('div'))
-  const productoImg = producto.appendChild(document.createElement('img'))
-  const productoDetalles = producto.appendChild(document.createElement('p'))
-    const productoNom = productoDetalles.appendChild(document.createElement('span'))
-    const productoDes = productoDetalles.appendChild(document.createElement('span'))
-    const productoBtn= productoDetalles.appendChild(document.createElement('button'))
+const productoImageText = producto.appendChild(document.createElement('div'))
+  
+  const productoImg = productoImageText.appendChild(document.createElement('img'))
+  const productoDetalles = productoImageText.appendChild(document.createElement('p'))
+      const productoNom = productoDetalles.appendChild(document.createElement('span'))
+      const productoDes = productoDetalles.appendChild(document.createElement('span'))
+      const productoBtn= productoDetalles.appendChild(document.createElement('button'))
   const productoPreUni = producto.appendChild(document.createElement('p'))
   const productoCant = producto.appendChild(document.createElement('p'))
     const productoInput = productoCant.appendChild(document.createElement('input'))
   const productoPreTotal = producto.appendChild(document.createElement('p'))
+
+  console.log(productoImageText)
   
 // Adding classNames and values
   
   producto.className = ('row')
+  productoImageText.className = ('productDiv')
     productoImg.src = data.shirts[i].img
     productoDetalles.className = ('title')
-      productoNom.innerText = data.shirts[i].title
-      productoDes.innerText = data.shirts[i].description
-      productoBtn.className = ('btnQuitar')
-        productoBtn.innerText = 'Remove'
-        productoBtn.id = 'remove_'+i
+        productoNom.innerText = data.shirts[i].title
+        productoDes.innerText = data.shirts[i].description
+        productoBtn.className = ('btnQuitar')
+          productoBtn.innerText = 'Remove'
+          productoBtn.id = 'remove_'+i
     productoPreUni.className =('precioUnitario')
       productoPreUni.innerText = "$" + data.shirts[i].price + ".00"
     productoInput.className = ('inputValue')
