@@ -95,8 +95,9 @@ const productoImageText = producto.appendChild(document.createElement('div'))
       const buttonClicked = event.target 
       const index = Number(event.target.id.replace('remove_', ''))
       data.shirts.splice(index, 1);
-      buttonClicked.parentElement.parentElement.remove()
+      buttonClicked.parentElement.parentElement.parentElement.remove()
       updateTotal()
+      console.log(button)
     })
   }
 
