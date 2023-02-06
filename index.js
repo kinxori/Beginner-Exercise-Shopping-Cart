@@ -109,19 +109,20 @@ const producto = tagSelection.appendChild(document.createElement('div'))
           updateTotal() // calling total function on every input value update
         }
       }
-      // Total function 
+          // Total function 
 
-      
-        function updateTotal() {
-          let subtotal = 0;
-          for (const shirt of data.shirts) {
-            subtotal += shirt.price * shirt.quantity;
+          function updateTotal() {
+            let subtotal = 0
+            for(var i=0; i < data.shirts.length; i++){
+                const quantity = Number(document.querySelectorAll('.inputValue')[i].value);
+                const price = data.shirts[i].price 
+                subtotal = subtotal + (price*quantity);
+            }
+            const subTotalSelection = document.querySelector('.subtotal') // Selection of Subtotal div
+            subTotalSelection.innerHTML =  ` <h2>Total</h2>
+            <span id="total">$${subtotal}.00 USD</span>`
           }
-          const subTotalSelection = document.querySelector('.subtotal');
-          subTotalSelection.innerHTML = `<h2>Total</h2>
-          <span id="total">$${subtotal.toFixed(2)} USD</span>`;
-        }
-      
+          
         updateTotal() // Calling updated total function
 
         
