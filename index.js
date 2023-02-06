@@ -95,7 +95,7 @@ const productoImageText = producto.appendChild(document.createElement('div'))
       const buttonClicked = event.target 
       const index = Number(event.target.id.replace('remove_', ''))
       data.shirts.splice(index, 1);
-      buttonClicked.parentElement.parentElement.parentElement.remove()
+      buttonClicked.parentElement.parentElement.parentElement.remove();
       updateTotal()
       console.log(button)
     })
@@ -123,9 +123,22 @@ const productoImageText = producto.appendChild(document.createElement('div'))
             const quantity = Number(document.querySelectorAll('.inputValue')[i].value);
             const price = data.shirts[i].price 
             subtotal = subtotal + (price*quantity);
+            console.log(quantity)
         }
         const subTotalSelection = document.querySelector('.subtotal') // Selection of Subtotal div
         subTotalSelection.innerHTML =  ` <h2>Total</h2>
         <span id="total">$${subtotal}.00 USD</span>`
       }
+       
+
+        // Looping back the price update
+
+        function updateTotal() {
+          let subTotal = 0;
+          for (const shirt of data.shirts) {
+            subTotal += shirt.price * shirt.quantity;
+          }
+          data.subTotal = subTotal;
+        }
+
         updateTotal() // Calling updated total function
