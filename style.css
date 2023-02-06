@@ -68,7 +68,6 @@ margin: 0%;
   height: 70px;
   position: absolute;
   left: 0px;
-  top: 10px;
 }
 
 .products .title {
@@ -107,13 +106,13 @@ margin: 0;
 padding: 0;
 width: 40px;
 padding-right: 22px;
-padding-left: 26px;
+padding-left: 20px;
 }
 
 .products .row .inputValue {
-  width: 20px;
+  width: 40px;
   margin: 0;
-  padding: 0px 5px;
+  padding: 0;
   font-size: 12px;
   text-align: left;
 }
@@ -122,7 +121,7 @@ padding-left: 26px;
   margin: 0;
   padding: 0;
   width: 40px;
-  padding-left: 36px;
+  padding-left: 30px;
 }
 
 .totals {
@@ -251,10 +250,9 @@ padding-left: 26px;
   .products .row .inputValue {
     width: 30px;
     margin: 0;
-    padding: 5px 10px;
+    padding: 5px 15px;
     font-size: 18px;
     text-align: left;
-    width: 45px;
   }
   .products .row .precioTotal{
   
@@ -384,15 +382,14 @@ padding-left: 26px;
   padding: 0;
   width: 110px;
   padding-left: 85px;
-  padding-right: 70px;
+  padding-right: 80px;
   }
   
   .products .row .inputValue {
     margin: 0;
-    padding: 5px 15px;
+    padding: 5px 16px;
     font-size: 18px;
     text-align: left;
-    width: 50px;
   }
   .products .row .precioTotal{
   
@@ -483,12 +480,14 @@ padding-left: 26px;
     font-weight: bold;
     font-size: 44px;
     width: 380px;
+    text-align: left;
     padding-bottom: 8px;
   }
   
   .products .row .title span:nth-of-type(2) {
     font-weight: 200;
     font-size: 28px;
+    text-align: left;
     padding-bottom: 8px;
   }
   
@@ -498,6 +497,7 @@ padding-left: 26px;
     margin: 0;
     padding: 0;
     padding-top: 10px;
+    text-align: left;
     color: gray;
     cursor: pointer;
     font-size: 26px;
@@ -509,23 +509,21 @@ padding-left: 26px;
   padding: 0;
   width: 110px;
   padding-left: 378px;
-  padding-right: 265px;
+  padding-right: 290px;
   }
   
   .products .row .inputValue {
     margin: 0;
-    padding: 5px 20px;
+    padding: 5px 26px;
     font-size: 28px;
     text-align: left;
-    width: 100px;
-
   }
   .products .row .precioTotal{
     font-size: 28px;
     margin: 0;
     padding: 0;
     width: 40px;
-    padding-left: 282px;
+    padding-left: 312px;
   }
   
   .totals {
