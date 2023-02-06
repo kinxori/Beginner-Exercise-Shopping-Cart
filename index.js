@@ -95,9 +95,12 @@ const productoImageText = producto.appendChild(document.createElement('div'))
       const buttonClicked = event.target 
       const index = Number(event.target.id.replace('remove_', ''))
       data.shirts.splice(index, 1);
+<<<<<<< HEAD
       buttonClicked.parentElement.parentElement.parentElement.remove();
+=======
+      buttonClicked.parentElement.parentElement.remove()
+>>>>>>> parent of 5fc23c8 (Rearranged queries)
       updateTotal()
-      console.log(button)
     })
   }
 
