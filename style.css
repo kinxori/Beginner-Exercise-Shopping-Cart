@@ -68,10 +68,6 @@ margin: 0%;
   height: 70px;
   position: absolute;
   left: 0px;
-<<<<<<< HEAD
-=======
-  top: 10px;
->>>>>>> parent of 6e07663 (Mobile query fixed (new version))
 }
 
 .products .title {
@@ -110,7 +106,6 @@ margin: 0;
 padding: 0;
 width: 40px;
 padding-right: 22px;
-<<<<<<< HEAD
 padding-left: 20px;
 }
 
@@ -118,15 +113,6 @@ padding-left: 20px;
   width: 40px;
   margin: 0;
   padding: 0;
-=======
-padding-left: 26px;
-}
-
-.products .row .inputValue {
-  width: 20px;
-  margin: 0;
-  padding: 0px 5px;
->>>>>>> parent of 6e07663 (Mobile query fixed (new version))
   font-size: 12px;
   text-align: left;
 }
@@ -135,11 +121,7 @@ padding-left: 26px;
   margin: 0;
   padding: 0;
   width: 40px;
-<<<<<<< HEAD
   padding-left: 30px;
-=======
-  padding-left: 36px;
->>>>>>> parent of 6e07663 (Mobile query fixed (new version))
 }
 
 .totals {
@@ -268,16 +250,9 @@ padding-left: 26px;
   .products .row .inputValue {
     width: 30px;
     margin: 0;
-<<<<<<< HEAD
     padding: 5px 15px;
     font-size: 18px;
     text-align: left;
-=======
-    padding: 5px 10px;
-    font-size: 18px;
-    text-align: left;
-    width: 45px;
->>>>>>> parent of 6e07663 (Mobile query fixed (new version))
   }
   .products .row .precioTotal{
   
