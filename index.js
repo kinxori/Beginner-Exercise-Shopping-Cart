@@ -90,7 +90,7 @@ const producto = tagSelection.appendChild(document.createElement('div'))
       const buttonClicked = event.target 
       const index = Number(event.target.id.replace('remove_', ''))
       data.shirts.splice(index, 1);
-      buttonClicked.parentElement.parentElement.parentElement.remove();
+      buttonClicked.parentElement.parentElement.remove();
       updateTotal()
     })
   }
