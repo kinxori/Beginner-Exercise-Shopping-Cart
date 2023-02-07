@@ -4,6 +4,7 @@ body {
   font-family: sans-serif;
   color: hsl(0, 0%, 80%);
   background-color: hsl(0, 0%, 20%);
+  position: relative;
 }
 
 .container {
@@ -29,10 +30,7 @@ h1 {
 .tableheader .nameClass{
   padding-left:18px;
   margin: 0%;
-<<<<<<< HEAD
-=======
-  width: 30%;
->>>>>>> parent of 5fc23c8 (Rearranged queries)
+  width: 20%;
 }
 
 .tableheader .detailsClass{
@@ -52,20 +50,14 @@ margin: 0%;
 }
 
 .separator1{
-  width: 100%; 
+  width:100%; 
+  
 }
 
 .products .row {
   display: flex;
   padding-top: 20px;
-<<<<<<< HEAD
-  align-items: baseline;
-  position: relative;
-  padding-left: 92px;
-=======
   align-items: center;
-  justify-content: space-around;
->>>>>>> parent of 5fc23c8 (Rearranged queries)
 }
 
 .products .row p {
@@ -75,13 +67,12 @@ margin: 0%;
 .products img {
   width: 70px;
   height: 70px;
-  position: absolute;
-  left: 0px;
 }
 
 .products .title {
   display: flex;
   flex-direction: column;
+  padding-left: 24px;
 }
 
 .products .row .title span:first-of-type {
@@ -175,16 +166,16 @@ padding-left: 20px;
   border: 4px solid teal;
 }
 
-@media (min-width:768px) {
+@media (min-width:468px) {
 
   .container {
-    width: 100%;
+    width: 90%;
     margin: 0;
     padding: 5%;
   }
   
   h1 {
-    font-size: 44px;
+    font-size: 24px;
     padding-bottom: 30px;
   }
   
@@ -193,10 +184,6 @@ padding-left: 20px;
     display: flex;
     padding-bottom: 12px;
     font-weight: 600;
-<<<<<<< HEAD
-    font-size: 22px;
-    gap: 6.5%;
-=======
     font-size: 16px;
     justify-content: space-around;
     align-items: center;
@@ -205,6 +192,7 @@ padding-left: 20px;
   .tableheader .nameClass{
     padding:0px;
     margin: 0%;
+    width: 40%;
   }
   
   .tableheader .detailsClass{
@@ -229,51 +217,31 @@ padding-left: 20px;
   
   .separator1{
     width: 100%; 
->>>>>>> parent of 5fc23c8 (Rearranged queries)
   }
  
   .products .row {
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    align-items: baseline;
-    position: relative;
-    padding-left: 102px;
+    align-items: center;
+    justify-content: space-around;
   }
   
   .products img {
-<<<<<<< HEAD
-    width: 120px;
-    height: 120px;
-    position: absolute;
-    left: -15px;
-=======
-    width: 80px;
-    height: 80px;
-    background-color: #00aeae;
-    display: flex;
+    width: 100px;
+    height: 100px;
+    margin: 0%;
+    margin-left: -30px;
+    margin-right: -30px;
 
->>>>>>> parent of 5fc23c8 (Rearranged queries)
   }
   
   .products .title {
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
-    padding-left: 60px;
-    width: 148px;
-=======
-    padding-left:0px;
-    padding-right: 0px;    margin: 0px;
->>>>>>> parent of 5fc23c8 (Rearranged queries)
+    padding: 0;
   }
   
   .products .row .title span:first-of-type {
     font-weight: bold;
-<<<<<<< HEAD
-    font-size: 24px;
-    width: 160px;
-=======
     font-size: 16px;
     text-align: left;
     padding-bottom: 4px;
@@ -350,64 +318,61 @@ padding-left: 20px;
 
 }
 
-@media (min-width:780px) {
+@media (min-width:580px) {
 
   .container {
-    width: 90%;
-    margin: 0;
+    width: 580px;
+    margin: 0 auto;
     padding: 5%;
   }
   
   h1 {
     font-size: 24px;
-    padding-bottom: 30px;
   }
   
   .tableheader {
     display: flex;
-    padding-bottom: 12px;
     font-weight: 600;
     font-size: 16px;
-    align-items: space-around;
+    align-items: center;
     justify-content: space-around;
   }
- 
+  .tableheader .nameClass{
+    padding:0px;
+    margin: 0%;
+    width: 53%;
+  }
   .products .row {
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 30px;
-    align-items: baseline;
-    justify-content: space-around;
-    position: relative;
+    align-items: center;
+    padding: 0;
+    margin: 0;
   }
   
   .products img {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: -35px;
-    top: -10px;
+    width: 160px;
+    height: 160px;
+    margin: 0;
+    margin-left: -30px;
+    margin-right: -30px;
   }
   
   .products .title {
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
-    width: 148px;
   }
   
   .products .row .title span:first-of-type {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
     width: 150px;
->>>>>>> parent of 5fc23c8 (Rearranged queries)
     text-align: left;
     padding-bottom: 8px;
   }
   
   .products .row .title span:nth-of-type(2) {
     font-weight: 200;
-    font-size: 18px;
+    font-size: 14px;
     text-align: left;
     padding-bottom: 8px;
   }
@@ -421,46 +386,27 @@ padding-left: 20px;
     text-align: left;
     color: gray;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
   }
   
   .products .row .precioUnitario{
   font-size: 18px;
   margin: 0;
   padding: 0;
-  width: 110px;
-<<<<<<< HEAD
-  padding-right: 36px;
-  padding-left: 40px;
-=======
-  padding-left: 85px;
-  padding-right: 70px;
->>>>>>> parent of 5fc23c8 (Rearranged queries)
+  margin-left: -15px;
   }
   
   .products .row .inputValue {
-    width: 30px;
+    width: 35px;
     margin: 0;
-    padding: 5px 15px;
     font-size: 18px;
     text-align: left;
-<<<<<<< HEAD
   }
   .products .row .precioTotal{
   
-    padding-left: 12px;
-=======
-    width: 50px;
-  }
-  .products .row .precioTotal{
-  
->>>>>>> parent of 5fc23c8 (Rearranged queries)
     font-size: 18px;
     margin: 0;
     padding: 0;
-    width: 40px;
-<<<<<<< HEAD
-    padding-left: 100px;
   }
   
   .totals {
@@ -476,7 +422,7 @@ padding-left: 20px;
 
   .subtotal h2 {
     margin: 0;
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
   }
 
@@ -484,7 +430,7 @@ padding-left: 20px;
     display: flex;
     gap: 8px;
     align-items: baseline;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     font-style: normal;
   }
@@ -494,300 +440,10 @@ padding-left: 20px;
     color: white;
     border: 4px solid transparent;
     padding: 12px 20px;
-    font-size: 36px;
-    border-radius: 9px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-}
-
-@media (min-width:1024px) {
-
-  .container {
-    width: 90%;
-    margin: 0;
-    padding: 5%;
-  }
-  
-  h1 {
-    font-size: 44px;
-    padding-bottom: 30px;
-  }
-  
-  .tableheader {
-    width: 100%;
-    display: flex;
-    padding-bottom: 12px;
-    font-weight: 600;
-    font-size: 22px;
-    gap: 10%;
-  }
- 
-  .products .row {
-    display: flex;
-    padding-top: 50px;
-    padding-bottom: 30px;
-    align-items: baseline;
-    position: relative;
-    padding-left: 102px;
-  }
-  
-  .products img {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: -35px;
-    top: -10px;
-  }
-  
-  .products .title {
-    display: flex;
-    flex-direction: column;
-    padding-left: 100px;
-    width: 148px;
-  }
-  
-  .products .row .title span:first-of-type {
-    font-weight: bold;
-    font-size: 24px;
-    width: 150px;
-    text-align: left;
-    padding-bottom: 8px;
-  }
-  
-  .products .row .title span:nth-of-type(2) {
-    font-weight: 200;
-    font-size: 18px;
-    text-align: left;
-    padding-bottom: 8px;
-  }
-  
-  .products .row .title button {
-    background: none;
-    border: none;
-    margin: 0;
-    padding: 0;
-    padding-top: 10px;
-    text-align: left;
-    color: gray;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .products .row .precioUnitario{
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
-  width: 110px;
-  padding-left: 85px;
-  padding-right: 80px;
-  }
-  
-  .products .row .inputValue {
-    margin: 0;
-    padding: 5px 16px;
-    font-size: 18px;
-    text-align: left;
-  }
-  .products .row .precioTotal{
-  
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-    width: 40px;
-=======
->>>>>>> parent of 5fc23c8 (Rearranged queries)
-    padding-left: 140px;
-  }
-  
-  .totals {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 44px;
-    padding-bottom: 44px;
-    padding-right: 50px;
-    font-style: italic;
-    font-size: 20px;
-  }
-
-  .subtotal h2 {
-    margin: 0;
-    font-size: 40px;
-    font-style: normal;
-  }
-
-  .subtotal {
-    display: flex;
-    gap: 8px;
-    align-items: baseline;
-    font-size: 40px;
-    font-weight: bold;
-    font-style: normal;
-  }
-  
-  .totals button {
-    background: teal;
-    color: white;
-    border: 4px solid transparent;
-    padding: 12px 20px;
-    font-size: 36px;
+    font-size: 30px;
     border-radius: 9px;
     cursor: pointer;
     transition: all 0.3s ease;
     }
 
-}
-
-<<<<<<< HEAD
-@media (min-width:1920px) {
-=======
-@media (min-width:1440px) {
->>>>>>> parent of 5fc23c8 (Rearranged queries)
-
-  .container {
-    width: 90%;
-  }
-  
-  
-  h1 {
-    font-size: 54px;
-    padding-bottom: 30px;
-  }
-  
-  .tableheader {
-<<<<<<< HEAD
-    gap: 17%;
-=======
-    justify-content: space-around;
->>>>>>> parent of 5fc23c8 (Rearranged queries)
-  }
-
-  .products .row {
-    display: flex;
-    padding-top: 80px;
-    padding-left: 92px;
-<<<<<<< HEAD
-=======
-    
->>>>>>> parent of 5fc23c8 (Rearranged queries)
-  }
-  
-  .products img {
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    left: -25px;
-    top: 40px;
-  }
-  
-  .products .title {
-    display: flex;
-    flex-direction: column;
-    padding-left: 200px;
-    width: 148px;
-  }
-  
-  .products .row .title span:first-of-type {
-    font-weight: bold;
-    font-size: 44px;
-    width: 380px;
-<<<<<<< HEAD
-    text-align: left;
-=======
->>>>>>> parent of 5fc23c8 (Rearranged queries)
-    padding-bottom: 8px;
-  }
-  
-  .products .row .title span:nth-of-type(2) {
-    font-weight: 200;
-    font-size: 28px;
-<<<<<<< HEAD
-    text-align: left;
-=======
->>>>>>> parent of 5fc23c8 (Rearranged queries)
-    padding-bottom: 8px;
-  }
-  
-  .products .row .title button {
-    background: none;
-    border: none;
-    margin: 0;
-    padding: 0;
-    padding-top: 10px;
-<<<<<<< HEAD
-    text-align: left;
-=======
->>>>>>> parent of 5fc23c8 (Rearranged queries)
-    color: gray;
-    cursor: pointer;
-    font-size: 26px;
-  }
-  
-  .products .row .precioUnitario{
-  font-size: 28px;
-  margin: 0;
-  padding: 0;
-  width: 110px;
-  padding-left: 378px;
-<<<<<<< HEAD
-  padding-right: 290px;
-=======
-  padding-right: 265px;
->>>>>>> parent of 5fc23c8 (Rearranged queries)
-  }
-  
-  .products .row .inputValue {
-    margin: 0;
-<<<<<<< HEAD
-    padding: 5px 26px;
-    font-size: 28px;
-    text-align: left;
-=======
-    padding: 5px 20px;
-    font-size: 28px;
-    text-align: left;
-    width: 100px;
-
->>>>>>> parent of 5fc23c8 (Rearranged queries)
-  }
-  .products .row .precioTotal{
-    font-size: 28px;
-    margin: 0;
-    padding: 0;
-    width: 40px;
-<<<<<<< HEAD
-    padding-left: 312px;
-=======
-    padding-left: 282px;
->>>>>>> parent of 5fc23c8 (Rearranged queries)
-  }
-  
-  .totals {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 44px;
-    padding-bottom: 44px;
-    padding-right: 50px;
-    font-style: italic;
-    font-size: 20px;
-  }
-
-  .subtotal h2 {
-    margin: 0;
-    font-size: 40px;
-    font-style: normal;
-  }
-
-  .subtotal {
-    display: flex;
-    gap: 8px;
-    align-items: baseline;
-    font-size: 40px;
-    font-weight: bold;
-    font-style: normal;
-  }
-  
 }
