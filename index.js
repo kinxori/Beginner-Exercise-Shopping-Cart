@@ -89,7 +89,6 @@ const producto = tagSelection.appendChild(document.createElement('div'))
     button.addEventListener("click", function(event){
       const buttonClicked = event.target 
       const index = Number(event.target.id.replace('remove_', ''))
-      data.shirts.splice(index, 1);
       buttonClicked.parentElement.parentElement.remove();
       updateTotal()
     })
@@ -100,7 +99,6 @@ const producto = tagSelection.appendChild(document.createElement('div'))
     const inputs = document.querySelectorAll('.inputValue')
       for(var i=0; i < data.shirts.length; i++){
         inputs[i].onclick = (event) => { // Use event | Integrate IDs to button inputs
-          console.log("input:", event.target)
           const quantity = Number(event.target.value);
           const shirt = data.shirts.find((shirt)=>shirt.id == event.target.id)  // quick selection by ID
           const price = shirt.price 
@@ -112,15 +110,19 @@ const producto = tagSelection.appendChild(document.createElement('div'))
           // Total function 
 
           function updateTotal() {
-            let subtotal = 0
-            for(var i=0; i < data.shirts.length; i++){
-                const quantity = Number(document.querySelectorAll('.inputValue')[i].value);
-                const price = data.shirts[i].price 
-                subtotal = subtotal + (price*quantity);
-            }
-            const subTotalSelection = document.querySelector('.subtotal') // Selection of Subtotal div
-            subTotalSelection.innerHTML =  ` <h2>Total</h2>
-            <span id="total">$${subtotal}.00 USD</span>`
+            let stotal = 0;
+            const inputs = document.querySelectorAll('.inputValue');
+
+            inputs.forEach((input)=>{
+              const quantity = Number(input.value)
+              const index = Number(input.id);
+              const price = data.shirts[index].price;
+              stotal+=quantity*price;
+            })
+            const totalDisplay = document.querySelector('.subtotal') // Selection of Subtotal div
+            totalDisplay.innerHTML =  ` <h2>Total</h2>
+            <span id="total">$${stotal}.00 USD</span>`;
+            return;
           }
           
         updateTotal() // Calling updated total function
