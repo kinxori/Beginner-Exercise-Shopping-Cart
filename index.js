@@ -96,35 +96,36 @@ const producto = tagSelection.appendChild(document.createElement('div'))
 
 // Updating subtotal price by input value entry
 
-    const inputs = document.querySelectorAll('.inputValue')
-      for(var i=0; i < data.shirts.length; i++){
-        inputs[i].onclick = (event) => { // Use event | Integrate IDs to button inputs
-          const quantity = Number(event.target.value);
-          const shirt = data.shirts.find((shirt)=>shirt.id == event.target.id)  // quick selection by ID
-          const price = shirt.price 
-          const subtotalClass = document.querySelector('#total_'+shirt.id) // Create and add different element's ID by using data's IDs
-          subtotalClass.innerText = "$" + ((price)*quantity) + ".00" 
-          updateTotal() // calling total function on every input value update
-        }
-      }
-          // Total function 
+const inputs = document.querySelectorAll('.inputValue')
+for(var i=0; i < data.shirts.length; i++){
+  inputs[i].onclick = (event) => { // Use event | Integrate IDs to button inputs
+    const quantity = Number(event.target.value);
+    const shirt = data.shirts.find((shirt)=>shirt.id == event.target.id)  // quick selection by ID
+    const price = shirt.price 
+    const subtotalClass = document.querySelector('#total_'+shirt.id) // Create and add different element's ID by using data's IDs
+    subtotalClass.innerText = "$" + ((price)*quantity) + ".00" 
+    console.log(subtotalClass)
+    updateTotal() // calling total function on every input value update
+  }
+}
 
-          function updateTotal() {
-            let stotal = 0;
-            const inputs = document.querySelectorAll('.inputValue');
+  // Total function 
+  function updateTotal() {
+    let stotal = 0;
+    const inputs = document.querySelectorAll('.inputValue');
 
-            inputs.forEach((input)=>{
-              const quantity = Number(input.value)
-              const index = Number(input.id);
-              const price = data.shirts[index].price;
-              stotal+=quantity*price;
-            })
-            const totalDisplay = document.querySelector('.subtotal') // Selection of Subtotal div
-            totalDisplay.innerHTML =  ` <h2>Total</h2>
-            <span id="total">$${stotal}.00 USD</span>`;
-            return;
-          }
-          
-        updateTotal() // Calling updated total function
-
+    inputs.forEach((input)=>{
+      const quantity = Number(input.value)
+      const index = Number(input.id);
+      const price = data.shirts[index].price;
+      stotal+=quantity*price;
+    })
+    const totalDisplay = document.querySelector('.subtotal') // Selection of Subtotal div
+    totalDisplay.innerHTML =  ` <h2>Total</h2>
+    <span id="total">$${stotal}.00 USD</span>`;
+    return;
+  }
+  
+updateTotal() // Calling updated total function
+  
         
