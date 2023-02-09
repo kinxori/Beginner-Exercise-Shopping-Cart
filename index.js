@@ -6,7 +6,7 @@ const data = {
     shirts: [
       {
         quantity: 1,
-        id: 3,
+        id: 0,
         title: "Nike ACG Moc 3.5",
         description: "5/5.5/6",
         price: 115,
@@ -15,7 +15,7 @@ const data = {
       },
       {
         quantity: 2,
-        id: 0,
+        id: 1,
         title: 'Jordan Nu Retro 1 "Fresh Ink"',
         description: "4.5/5/6",
         price: 150,
@@ -24,7 +24,7 @@ const data = {
             },
       {
         quantity: 3,
-        id: 1,
+        id: 2,
         title: "Jordan",
         description: "Unique Size",
         price: 35,
@@ -33,7 +33,7 @@ const data = {
       },
       {
         quantity: 4,
-        id: 2,
+        id: 3,
         title: "KD Trey 5 X",
         description: "3/3.5/4.5/5",
         price: 115,
@@ -101,6 +101,7 @@ for(var i=0; i < data.shirts.length; i++){
   inputs[i].onclick = (event) => { // Use event | Integrate IDs to button inputs
     const quantity = Number(event.target.value);
     const shirt = data.shirts.find((shirt)=>shirt.id == event.target.id)  // quick selection by ID
+    console.log(shirt) 
     const price = shirt.price 
     const subtotalClass = document.querySelector('#total_'+shirt.id) // Create and add different element's ID by using data's IDs
     subtotalClass.innerText = "$" + ((price)*quantity) + ".00" 
